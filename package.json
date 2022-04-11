@@ -1,0 +1,19 @@
+{
+  "name": "space",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss:./public/css/style.css -w",
+    "prefix": "postcss -w ./public/css/style.css --user autoprefixer -d ./public/css/prefixed/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "google-font-installer": "^1.2.0",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
+}

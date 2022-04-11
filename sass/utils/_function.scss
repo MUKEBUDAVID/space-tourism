@@ -1,0 +1,7 @@
+// for the conversion of px then rem
+@function font-size_rem($value){
+    $rem:"rem";
+   $tete:($value*1)/10 #{$rem};
+   @return $tete;
+
+}

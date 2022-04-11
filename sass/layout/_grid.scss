@@ -1,0 +1,12 @@
+body{
+    grid-template-columns:1fr ;
+    grid-template-rows:136px auto ;
+
+    
+    header{
+        grid-row:1;
+    }
+    section{ 
+        grid-row:2;
+    }
+}
