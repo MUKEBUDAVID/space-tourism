@@ -1,18 +1,18 @@
 // utile
-@import "./utils/variables";
+@import "./utils/_variables";
 
 /* vendors*/
 // base
-@import "./base/reset";
-@import "./base/typography";
+@import "./base/_reset";
+@import "./base/_typography";
 
 // component
-@import "./components/btn";
+@import "./components/_btn";
 
 // layout
-@import "./layout/grid";
-@import "./layout/header";
-@import "./layout/section";
+@import "./layout/_grid";
+@import "./layout/_header";
+@import "./layout/_section";
 
 // pages
 

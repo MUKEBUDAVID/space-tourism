@@ -3,7 +3,7 @@ body{
     grid-template-rows:136px auto ;
 
     
-    header{
+    &_header{
         grid-row:1;
     }
     section{ 
