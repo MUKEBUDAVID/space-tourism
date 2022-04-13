@@ -7,4 +7,10 @@ $color_tereciare:#FFFFFF;
 //the img background home
 $the_desktop_background:"/assets/home/background-home-desktop.jpg";
 $the_tablet_background:"/assets/home/background-home-tablet.jpg";
-$the_tablet_background:"/assets/home/background-home-mobile";
+$the_mobile_background:"/assets/home/background-home-mobile";
+
+// the breakpoint
+$breakpoint:(
+    mobile:375px,
+    tablet:768px,
+ )

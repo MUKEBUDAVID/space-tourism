@@ -18,3 +18,11 @@ body {
     box-sizing: border-box;
     background: url($the_desktop_background);
 }
+
+
+body {
+  @media (max-with:map-get($breakpoint, tablet)) {
+        
+      background: url($the_tablet_background);
+    }
+}
