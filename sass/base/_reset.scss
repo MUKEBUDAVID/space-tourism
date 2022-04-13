@@ -16,13 +16,27 @@ body {
     width:100%;
     height: 100vh;
     box-sizing: border-box;
-    background: url($the_desktop_background);
+    background: url($the_desktop_background)  ;
+    background-size:cover ;
+    background-repeat: no-repeat;
 }
 
 
 body {
-  @media (max-with:map-get($breakpoint, tablet)) {
+  @media (max-width:map-get($breakpoint, tablet)) {
         
-      background: url($the_tablet_background);
+      background: url($the_tablet_background) ;
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+}
+
+
+body {
+    @media (max-width:map-get($breakpoint, mobile)) {
+        background: url($the_mobile_background) ;
+        background-size:cover;
+        background-repeat: no-repeat;
+        
     }
 }
