@@ -1,0 +1,38 @@
+.Home_btn {
+    // position: absolute;
+    width: 274px;
+    height: 274px;
+    margin-left: 10px;
+    margin-top: 310px;
+    margin-right: 84px;
+    border-radius: 101%;
+    // border:50px black solid;
+    // box-sizing: content-box;
+
+
+    &:hover {
+        border: 50px rgb(36, 38, 47) solid;
+        box-sizing: content-box;
+        width: 174px;
+        height: 174px;
+        animation: pulse-animation 2s infinite;
+        cursor: pointer;
+    
+    
+    }
+}
+
+
+
+
+
+// l'aniamtion de pulsation pour le btn de la page Home
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgb(36, 38, 47);
+    }
+
+    100% {
+        box-shadow: 0 0 0 200px rgba(0, 0, 0, 0);
+    }
+}
