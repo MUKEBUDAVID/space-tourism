@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="./public/css/style.css">
-  <script src="index.js" async></script>
+  <link rel="stylesheet" href="public/css/style.css">
+  <script src="javascript/header.js" async></script>
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -17,26 +18,31 @@
     <img class="header_imgMobile" src="assets/shared/logo.svg" alt="icone">
 
     <!-- Hamburger menu -->
-    <img class="header_hamburger" src="assets/shared/icon-hamburger.svg" alt="Hamburger_menu">
+    <img class="header_hamburger" src="assets/shared/icon-hamburger.svg" alt="Hamburger_menu" id="hamburger" >
 
-    <div class="header_barreGenerale">
+    <div class="header_barreGenerale" id="barreGenerale">
 
       <a href="index.html"> <img src="assets/shared/logo.svg" alt="icone"></a>
 
       <div class="bar"></div>
-
+      
       <nav class="header_menu">
-        <ul>
-          <li id="HOME"><span>00</span>Home</li>
-          <li id="DESTINATION"><span>01</span>Destination</li>
-          <li id="CREW"><span>02</span>Crew</li>
-          <li id="TECHNOLOGY"><span>03</span>Technology</li>
+        <!-- icone de la croix pour le mobile -->
+       <img src="assets/shared/icon-close.svg" alt="close_icone" id="close_icone"> 
+
+        <ul class="ulHome_typo">
+          <li id="HOME"><span class="span_typo">00</span>Home</li>
+          <li id="DESTINATION"><span class="span_typo">01</span>Destination</li>
+          <li id="CREW"><span class="span_typo">02</span>Crew</li>
+          <li id="TECHNOLOGY"><span class="span_typo">03</span>Technology</li>
         </ul>
       </nav>
 
     </div>
   </header>
 
+
+  
   <section class="section_home" >
     <div >
       <h3 class="so_typo">So, you want to travel to</h3>

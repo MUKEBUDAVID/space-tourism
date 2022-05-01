@@ -3,35 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="public/css/style.css">
+  <script src="javascript/destination.js" async></script>
+  <script src="javascript/destination_false.js" async></script>
+
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body id="body">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <header class="header">
+    <!-- the img for the mobile breakpoint -->
+    <img class="header_imgMobile" src="assets/shared/logo.svg" alt="icone">
 
-  01 Pick your destination
+    <!-- Hamburger menu -->
+    <img class="header_hamburger" src="assets/shared/icon-hamburger.svg" alt="Hamburger_menu" id="hamburger" >
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <div class="header_barreGenerale" id="barreGenerale">
 
-  Moon
+      <a href="index.html"> <img src="assets/shared/logo.svg" alt="icone"></a>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
+      <div class="bar"></div>
+      
+      <nav class="header_menu">
+        <!-- icone de la croix pour le mobile -->
+       <img src="assets/shared/icon-close.svg" alt="close_icone" id="close_icone"> 
+
+        <ul class="ulHome_typo">
+          <li id="HOME"><span class="span_typo">00</span>Home</li>
+          <li id="DESTINATION"><span class="span_typo">01</span>Destination</li>
+          <li id="CREW"><span class="span_typo">02</span>Crew</li>
+          <li id="TECHNOLOGY"><span class="span_typo">03</span>Technology</li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+ <section class="destination_section">
+
+   <div class="left">
+
+  <p class="titre"><span class="number" id="number">01</span> <span class="pick_typo" id="pick_typo">Pick your destination</span> </p>
+  
+  
+<img src="assets/destination/image-moon.png" alt="picture of the moon" id="moon">
+
+
+</div>
+
+
+
+<div class="right">
+
+  
+    <ul>
+    <li id="satelite1">Moon</li>
+    <li id="satelite2">Mars</li>
+    <li id="satelite3">Europa</li>
+    <li id="satelite4">Titan</li>
+  </ul>
+  
+  <h1 id="h1">Moon</h1>
+  
+  
+   
+   
+   <p class="right_firstP" id="firstP">
+
+  See our planet as you’ve never seen it before. A perfect  relaxing trip away to help 
+  regain perspective and come  back refreshed. While you’re there, take in some history 
   by visiting the Luna 2 and Apollo 11 landing sites.
+   </p>
 
-  Avg. distance
-  384,400 km
 
-  Est. travel time
-  3 days
+   <hr> 
+
+   <div class="right_mini-footeur">
+
+     <div>
+       <p class="AVG_typo" >Avg. distance</p>
+       <p class="distance_typo" id="distance1">384,400 km</p>
+      </div>
+   <div>
+     <p class="AVG_typo" >Est. travel time</p>
+     <p class="distance_typo" id="distance2">3 days</p>
+   </div>
+   
+  </div>
+   
+    
+  
+  
+  
+  
+  
+</div>
+</section>
 </body>
 </html>

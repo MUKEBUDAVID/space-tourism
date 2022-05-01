@@ -1,6 +1,7 @@
 body{
+    display: grid;
     grid-template-columns:1fr ;
-    grid-template-rows:136px auto ;
+    grid-template-rows:136px 1fr ;
 
     
     header{
@@ -9,4 +10,36 @@ body{
     section{ 
         grid-row:2;
     }
+}
+
+
+
+
+
+
+
+
+// the grid for the section of destination
+
+.destination_section{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:1fr ;
+
+
+    .left{
+        grid-column: 1;
+    }
+
+
+    .right{
+        grid-column: 2;
+
+        
+      display: grid;
+     
+
+    }
+
+    
 }
