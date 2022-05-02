@@ -1,14 +1,15 @@
-body{
+body {
     display: grid;
-    grid-template-columns:1fr ;
-    grid-template-rows:136px 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 136px 1fr;
 
-    
-    header{
-        grid-row:1;
+
+    header {
+        grid-row: 1;
     }
-    section{ 
-        grid-row:2;
+
+    section {
+        grid-row: 2;
     }
 }
 
@@ -21,25 +22,77 @@ body{
 
 // the grid for the section of destination
 
-.destination_section{
+
+// the breakpoint for the desktop
+@media screen and (min-width: map-get($breakpoint, desktop)) {
+.destination_section {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
-    grid-template-rows:1fr ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
 
 
-    .left{
+    .left {
         grid-column: 1;
     }
 
 
-    .right{
+    .right {
         grid-column: 2;
-
-        
-      display: grid;
-     
-
+        display: grid;
     }
 
-    
+
+
+
+
+}
+
+
+}
+
+
+
+// the breakpoint for the tablet
+@media screen and (min-width: map-get($breakpoint, tablet)) {
+
+    .destination_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+
+        .left {
+            grid-row: 1;
+        }
+
+
+        .right {
+            grid-row: 2;
+            display: grid;
+        }
+
+    }
+}
+
+
+
+
+// the breakpoint for the mobile
+@media screen and (min-width: map-get($breakpoint, mobile)) {
+
+    .destination_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+
+        .left {
+            grid-row: 1;
+        }
+
+
+        .right {
+            grid-row: 2;
+            display: grid;
+        }
+
+    }
 }

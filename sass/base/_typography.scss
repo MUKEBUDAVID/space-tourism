@@ -205,6 +205,41 @@
 
         mix-blend-mode: normal;
         opacity: 0.25;
+
+
+        @media screen and (min-width: map-get($breakpoint, tablet)) {
+
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: convertion_rem(20);
+            line-height: 24px;
+            /* identical to box height */
+
+            letter-spacing: 3.375px;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+            opacity: 0.25;
+
+
+
+        }
+
+
+        @media screen and (min-width: map-get($breakpoint, mobile)) {
+
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: convertion_rem(16);
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            mix-blend-mode: normal;
+            color: $color_tereciare;
+
+        }
     }
 
 
@@ -220,8 +255,42 @@
         letter-spacing: 4.725px;
         text-transform: uppercase;
 
+        @media screen and (min-width: map-get($breakpoint, tablet)) {
+
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: convertion_rem(20);
+            line-height: 24px;
+            /* identical to box height */
+
+            letter-spacing: 3.375px;
+            text-transform: uppercase;
+
+            color: $color_tereciare;
+
+        }
+
+        @media screen and (min-width: map-get($breakpoint, mobile)) {
+
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: convertion_rem(16);
+            line-height: 19px;
+            letter-spacing: 2.7px;
+            text-transform: uppercase;
+
+            color: $color_tereciare;
+
+        }
+
 
     }
+
+
+
+
 
 
 
@@ -240,7 +309,6 @@
         color: $color_secodaire;
         text-transform: uppercase;
 
-
     }
 
 
@@ -251,7 +319,34 @@
         font-size: convertion_rem(100);
         line-height: 115px;
         text-transform: uppercase;
-        color: $color_tereciare
+        color: $color_tereciare;
+
+        @media screen and (max-width: map-get($breakpoint, tablet)) {
+            font-family: 'Bellefair';
+            font-style: normal;
+            font-weight: 400;
+            font-size: convertion_rem(80);
+            line-height: 92px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: $color_tereciare
+        }
+
+
+        @media screen and (max-width: map-get($breakpoint, tablet)) {
+            font-family: 'Bellefair';
+            font-style: normal;
+            font-weight: 400;
+            font-size: convertion_rem(56);
+            line-height: 64px;
+            text-align: center;
+
+            color: $color_tereciare;
+        }
+
+
     }
 
     &_firstP {
@@ -261,9 +356,26 @@
         font-size: convertion_rem(18);
         line-height: 32px;
         /* or 178% */
-
-
         color: $color_secodaire;
+
+
+        @media screen and (max-width: map-get($breakpoint, tablet)) {
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+
+            text-align: center;
+
+            color: $color_tereciare;
+
+
+
+
+
+        }
     }
 
     .AVG_typo {
