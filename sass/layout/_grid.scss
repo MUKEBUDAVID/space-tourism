@@ -20,6 +20,8 @@ body {
 
 
 
+
+
 // the grid for the section of destination
 
 
@@ -53,7 +55,7 @@ body {
 
 
 // the breakpoint for the tablet
-@media screen and (min-width: map-get($breakpoint, tablet)) {
+@media screen and (max-width: map-get($breakpoint, tablet)) {
 
     .destination_section {
         display: grid;
@@ -77,7 +79,7 @@ body {
 
 
 // the breakpoint for the mobile
-@media screen and (min-width: map-get($breakpoint, mobile)) {
+@media screen and (max-width: map-get($breakpoint, mobile)) {
 
     .destination_section {
         display: grid;
@@ -95,4 +97,86 @@ body {
         }
 
     }
+}
+
+
+
+
+
+
+
+
+// the grid for the section of Crew
+
+
+// the breakpoint for the desktop
+@media screen and (min-width: map-get($breakpoint, desktop)) {
+.crew_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+
+    .left_crew {
+        grid-column: 1;
+    }
+
+
+    .right_crew {
+        grid-column: 2;
+     
+    }
+
+}
+
+
+}
+
+
+
+// the breakpoint for the Tablet
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+.crew_section {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2,1fr);
+
+
+    .left_crew {
+        grid-row:1;
+    }
+
+
+    .right_crew {
+        grid-row:2;
+     
+    }
+
+}
+
+
+}
+
+
+// the breakpoint for the mobile
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+.crew_section {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(2, 1fr);
+
+
+    .left_crew {
+        grid-row: 2;
+    }
+
+
+    .right_crew {
+        grid-row:1 ;
+     
+    }
+
+}
+
+
 }

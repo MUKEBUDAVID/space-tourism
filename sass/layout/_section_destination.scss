@@ -137,7 +137,7 @@
 
 
 // the breakpoint for the tablet
-@media screen and (min-width: map-get($breakpoint, tablet)) {
+@media screen and (max-width: map-get($breakpoint, tablet)) {
     .left {
         p {
             // background-color: red;
@@ -252,7 +252,7 @@
 
 
 // the breakpoint for the mobile
-@media screen and (min-width: map-get($breakpoint, mobile)) {
+@media screen and (max-width: map-get($breakpoint, mobile)) {
 
 
     .left {

@@ -218,6 +218,3 @@ async function getResolution() {
 }
 
 // getResolution();
-
-let soss = 'dado';
-let tata = 'dado';
