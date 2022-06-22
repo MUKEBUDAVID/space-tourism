@@ -411,65 +411,65 @@
 
 //font for section crew
 
- @media screen and (min-width: map-get($breakpoint, desktop)) {
-.crew_section {
-    color: white;
+@media screen and (min-width: map-get($breakpoint, desktop)) {
+    .crew_section {
+        color: white;
 
-    .left_crew {
+        .left_crew {
 
-        .titre_crew_typo span:nth-child(1) {
-            font-family: 'Barlow Condensed';
-            font-style: normal;
-            font-weight: 700;
-            font-size: convertion_rem(28);
-            line-height: 34px;
-            /* identical to box height */
+            .titre_crew_typo span:nth-child(1) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: convertion_rem(28);
+                line-height: 34px;
+                /* identical to box height */
 
-            letter-spacing: 3.725px;
+                letter-spacing: 3.725px;
 
-            mix-blend-mode: normal;
-            opacity: 0.25;
-            
-
-            color: $color_secodaire;
-            margin-right: 10px;
-        }
+                mix-blend-mode: normal;
+                opacity: 0.25;
 
 
-        .titre_crew_typo span:nth-child(2) {
-            font-family: 'Barlow Condensed';
-            font-style: normal;
-            font-weight: 400;
-            font-size: convertion_rem(28);
-            line-height: 34px;
-            /* identical to box height */
-
-            letter-spacing: 3.375px;
-            text-transform: uppercase;
-            color: $color_tereciare;
-
-        }
+                color: $color_secodaire;
+                margin-right: 10px;
+            }
 
 
+            .titre_crew_typo span:nth-child(2) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(28);
+                line-height: 34px;
+                /* identical to box height */
 
-        .h2_crew_typo {
-            font-family: 'Bellefair';
-            font-style: normal;
-            font-weight: 400;
-            font-size: convertion_rem(32);
-            line-height: 37px;
-            /* identical to box height */
+                letter-spacing: 3.375px;
+                text-transform: uppercase;
+                color: $color_tereciare;
 
-            text-transform: uppercase;
-
-            color: $color_tereciare;
-
-            mix-blend-mode: normal;
-            opacity: 0.5;
+            }
 
 
 
-}
+            .h2_crew_typo {
+                font-family: 'Bellefair';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(32);
+                line-height: 37px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+
+                color: $color_tereciare;
+
+                mix-blend-mode: normal;
+                opacity: 0.5;
+
+
+
+            }
         }
 
 
@@ -507,73 +507,73 @@
     }
 
 
- }
-
-
-
-
-
-
- @media screen and (max-width: map-get($breakpoint, tablet)) {
-.crew_section {
-    color: white;
-
-    .left_crew {
-
-        .titre_crew_typo span:nth-child(1) {
-            font-family: 'Barlow Condensed';
-            font-style: normal;
-            font-weight: 700;
-            font-size: convertion_rem(20);
-            line-height: 24px;
-            /* identical to box height */
-
-            letter-spacing:3.375px;
-
-            mix-blend-mode: normal;
-            opacity: 0.25;
-            
-
-            color: $color_secodaire;
-            margin-right: 10px;
-        }
-
-
-        .titre_crew_typo span:nth-child(2) {
-            font-family: 'Barlow Condensed';
-            font-style: normal;
-            font-weight: 400;
-            font-size: convertion_rem(20);
-            line-height: 24px;
-            /* identical to box height */
-
-            letter-spacing: 3.375px;
-            text-transform: uppercase;
-            color: $color_tereciare;
-
-        }
-
-
-
-        .h2_crew_typo {
-            font-family: 'Bellefair';
-            font-style: normal;
-            font-weight: 400;
-            font-size: convertion_rem(24);
-            line-height: 28px;
-            /* identical to box height */
-
-            text-transform: uppercase;
-            text-align: center;
-
-            color: $color_tereciare;
-
-            mix-blend-mode: normal;
-            opacity: 0.5;
-
-
-
 }
+
+
+
+
+
+
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+    .crew_section {
+        color: white;
+
+        .left_crew {
+
+            .titre_crew_typo span:nth-child(1) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: convertion_rem(20);
+                line-height: 24px;
+                /* identical to box height */
+
+                letter-spacing: 3.375px;
+
+                mix-blend-mode: normal;
+                opacity: 0.25;
+
+
+                color: $color_secodaire;
+                margin-right: 10px;
+            }
+
+
+            .titre_crew_typo span:nth-child(2) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(20);
+                line-height: 24px;
+                /* identical to box height */
+
+                letter-spacing: 3.375px;
+                text-transform: uppercase;
+                color: $color_tereciare;
+
+            }
+
+
+
+            .h2_crew_typo {
+                font-family: 'Bellefair';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(24);
+                line-height: 28px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+                text-align: center;
+
+                color: $color_tereciare;
+
+                mix-blend-mode: normal;
+                opacity: 0.5;
+
+
+
+            }
         }
 
 
@@ -613,71 +613,71 @@
     }
 
 
- }
-
-
-
-
- @media screen and (max-width: map-get($breakpoint, mobile)) {
-.crew_section {
-    color: white;
-
-    .left_crew {
-
-        .titre_crew_typo span:nth-child(1) {
-            font-family: 'Barlow Condensed';
-            font-style: normal;
-            font-weight: 700;
-            font-size: convertion_rem(16);
-            line-height: 19px;
-            /* identical to box height */
-
-            letter-spacing:3.375px;
-
-            mix-blend-mode: normal;
-            opacity: 0.25;
-            
-
-            color: $color_secodaire;
-            margin-right: 10px;
-        }
-
-
-        .titre_crew_typo span:nth-child(2) {
-            font-family: 'Barlow Condensed';
-            font-style: normal;
-            font-weight: 400;
-            font-size: convertion_rem(16);
-            line-height: 19px;
-            /* identical to box height */
-
-            letter-spacing: 2.7px;
-            text-transform: uppercase;
-            color: $color_tereciare;
-
-        }
-
-
-
-        .h2_crew_typo {
-            font-family: 'Bellefair';
-            font-style: normal;
-            font-weight: 400;
-            font-size: convertion_rem(16);
-            line-height: 18px;
-            /* identical to box height */
-
-            text-transform: uppercase;
-            text-align: center;
-
-            color: $color_tereciare;
-
-            mix-blend-mode: normal;
-            opacity: 0.5;
-
-
-
 }
+
+
+
+
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+    .crew_section {
+        color: white;
+
+        .left_crew {
+
+            .titre_crew_typo span:nth-child(1) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: convertion_rem(16);
+                line-height: 19px;
+                /* identical to box height */
+
+                letter-spacing: 3.375px;
+
+                mix-blend-mode: normal;
+                opacity: 0.25;
+
+
+                color: $color_secodaire;
+                margin-right: 10px;
+            }
+
+
+            .titre_crew_typo span:nth-child(2) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(16);
+                line-height: 19px;
+                /* identical to box height */
+
+                letter-spacing: 2.7px;
+                text-transform: uppercase;
+                color: $color_tereciare;
+
+            }
+
+
+
+            .h2_crew_typo {
+                font-family: 'Bellefair';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(16);
+                line-height: 18px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+                text-align: center;
+
+                color: $color_tereciare;
+
+                mix-blend-mode: normal;
+                opacity: 0.5;
+
+
+
+            }
         }
 
 
@@ -717,7 +717,7 @@
     }
 
 
- }
+}
 
 
 
@@ -725,3 +725,297 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//font for section techno
+
+@media screen and (min-width: map-get($breakpoint, desktop)) {
+    .techno_section {
+        color: white;
+
+        .left_techno {
+
+            h3 span:nth-child(1) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: convertion_rem(28);
+                line-height: 34px;
+                /* identical to box height */
+
+                letter-spacing: 4.725px;
+
+                color: $color_secodaire;
+
+                mix-blend-mode: normal;
+                opacity: 0.25;
+
+
+            }
+
+
+            h3 span:nth-child(2) {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(25);
+                line-height: 34px;
+                /* identical to box height */
+
+                letter-spacing: 4.725px;
+
+                color: $color_secodaire;
+
+
+
+            }
+
+            h4 {
+                font-family: 'Barlow Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(16);
+                line-height: 19px;
+                letter-spacing: 2.7px;
+
+                color: $color_secodaire;
+            }
+
+            h1 {
+                font-family: 'Bellefair';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(56);
+                line-height: 64px;
+
+                color: $color_tereciare;
+            }
+
+            p {
+                font-family: 'Barlow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: convertion_rem(18);
+                line-height: 32px;
+                /* or 178% */
+                color: $color_secodaire;
+
+
+            }
+
+        }
+
+
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+    .techno_section {
+        color: white;
+          .left_techno {
+
+              h3 span:nth-child(1) {
+                  font-family: 'Barlow Condensed';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: convertion_rem(20);
+                  line-height: 24px;
+                  /* identical to box height */
+
+                  letter-spacing:3.375px;
+
+                  color: $color_secodaire;
+
+                  mix-blend-mode: normal;
+                  opacity: 0.25;
+
+
+              }
+
+              h3 span:nth-child(2) {
+                  font-family: 'Barlow Condensed';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: convertion_rem(20);
+                  line-height: 24px;
+                  /* identical to box height */
+
+                  letter-spacing:3.375px;
+                  text-transform: uppercase;
+
+                  color: $color_secodaire;
+
+
+
+              }
+
+              h4 {
+                  font-family: 'Barlow Condensed';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: convertion_rem(16);
+                  line-height: 19px;
+                  letter-spacing: 2.7px;
+
+                  color: $color_secodaire;
+              }
+
+                 h1 {
+                     font-family: 'Bellefair';
+                     font-style: normal;
+                     font-weight: 400;
+                     font-size: convertion_rem(40);
+                     line-height: 46px;
+                     /* identical to box height */
+
+                     text-align: center;
+                     text-transform: uppercase;
+
+                     color: $color_tereciare;
+                 }
+
+                 p {
+                     font-family: 'Barlow';
+                     font-style: normal;
+                     font-weight: 400;
+                     font-size: convertion_rem(16);
+                     line-height: 28px;
+                     /* or 178% */
+                     color: $color_secodaire;
+                     text-align:center ;
+
+
+                 }
+
+
+
+
+            }
+
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+    .crew_section {
+        color: white;
+.left_techno {
+
+    h3 span:nth-child(1) {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: convertion_rem(16);
+        line-height: 19px;
+        /* identical to box height */
+
+        letter-spacing:2.7px;
+
+        color: $color_secodaire;
+
+        mix-blend-mode: normal;
+        opacity: 0.25;
+
+
+    }
+
+    h3 span:nth-child(2) {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: convertion_rem(16);
+        line-height: 19px;
+        /* identical to box height */
+
+        letter-spacing:2.7px;
+        text-transform: uppercase;
+
+        color: $color_secodaire;
+
+
+
+    }
+
+    h4 {
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: convertion_rem(14);
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+
+        color: $color_secodaire;
+    }
+
+    h1 {
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: convertion_rem(24);
+        line-height: 28px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $color_tereciare;
+    }
+
+    p {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: convertion_rem(1);
+        line-height: 5px;
+        /* or 178% */
+        color: $color_secodaire;
+        text-align: center;
+
+
+    }
+
+
+
+
+}
+
+
+
+    }
+
+
+}

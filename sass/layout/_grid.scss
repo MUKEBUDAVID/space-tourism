@@ -180,3 +180,93 @@ body {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// the grid for the section of techno
+
+
+// the breakpoint for the desktop
+@media screen and (min-width: map-get($breakpoint, desktop)) {
+.techno_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+
+    .left_techno {
+        grid-column: 1;
+    }
+
+
+    .right_techno {
+        grid-column: 2;
+     
+    }
+
+}
+
+
+}
+
+
+
+// the breakpoint for the Tablet
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+.techno_section {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2,1fr);
+
+
+    .left_techno {
+        grid-row:1;
+    }
+
+
+    .right_techno {
+        grid-row:2;
+     
+    }
+
+}
+
+
+}
+
+
+// the breakpoint for the mobile
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+.techno_section {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(2, 1fr);
+
+
+    .left_techno {
+        grid-row: 2;
+    }
+
+
+    .right_techno {
+        grid-row:1 ;
+     
+    }
+
+}
+
+
+}
