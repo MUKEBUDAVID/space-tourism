@@ -1,3 +1,6 @@
+export default async function destination() {
+    
+
 const moon_picture = document.getElementById("moon");
 const satelite1 = document.getElementById("satelite1");
 const satelite2 = document.getElementById("satelite2");
@@ -101,7 +104,7 @@ satelite2.addEventListener("click", async () => {
 
     moon_picture.setAttribute("src", david[1].images.png);
 
-    console.log(david[1]);
+    // console.log(david[1]);
 
     h1.innerHTML = david[1].name;
 
@@ -125,7 +128,7 @@ satelite3.addEventListener("click", async () => {
 
     moon_picture.setAttribute("src", david[2].images.png);
 
-    console.log(david[2]);
+    // console.log(david[2]);
 
     h1.innerHTML = david[2].name;
 
@@ -148,7 +151,7 @@ satelite4.addEventListener("click", async () => {
 
     moon_picture.setAttribute("src", david[3].images.png);
 
-    console.log(david[3]);
+    // console.log(david[3]);
 
     h1.innerHTML = david[3].name;
 
@@ -157,3 +160,9 @@ satelite4.addEventListener("click", async () => {
     distance1.textContent = david[3].distance;
     distance2.textContent = david[3].travel;
 })
+
+
+
+
+
+}

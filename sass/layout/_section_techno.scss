@@ -6,10 +6,10 @@
 
             h3 {
                 position: absolute;
-                width: 305px;
+                width: 405px;
                 height: 34px;
                 left: 100.5px;
-                top: 150px;
+                top: 30px;
             }
 
             h3 span:nth-child(1) {
@@ -41,6 +41,9 @@
             //     color: $color_primaire;
 
             // }
+
+
+            // scss pour js
             .btn_techno .checked {
                 background-color: $color_tereciare;
                 color: $color_primaire;
@@ -53,7 +56,8 @@
                 height: 19px;
                 left: 15%;
                 right: 68.09%;
-                top: calc(70% - 19px/2 - 142px);
+                top: calc(70% - -397.5px - 142px);
+                ;
             }
 
             h1 {
@@ -61,7 +65,7 @@
                 height: 64px;
                 left: 15%;
                 right: 0%;
-                top: calc(70% - 64px/2 - 89.5px);
+                top: calc(70% - -401px - 89.5px);
             }
 
             p {
@@ -70,7 +74,7 @@
                 width: 500px;
                 left: 15%;
                 right: 5.53%;
-                top: calc(70% - 192px/2 + 55.5px);
+                top: calc(17% - -359px + 55.5px);
 
 
 

@@ -1,3 +1,6 @@
+export default async function header() {
+    
+
 const body = document.getElementById("body");
 const HOME = document.getElementById("HOME");
 const DESTINATION = document.getElementById("DESTINATION");
@@ -192,27 +195,27 @@ close_icone.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-async function getResolution() {
-    alert("Votre résolution d'écran est: " + screen.width + "x" + screen.height);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// async function getResolution() {
+//     alert("Votre résolution d'écran est: " + screen.width + "x" + screen.height);
+// }

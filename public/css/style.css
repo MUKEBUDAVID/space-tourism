@@ -713,6 +713,7 @@ body::-webkit-scrollbar-thumb {
   height: 174px;
   animation: pulse-animation 2s infinite;
   cursor: pointer;
+  color: #FFFFFF;
 }
 
 @keyframes pulse-animation {
@@ -738,6 +739,7 @@ body::-webkit-scrollbar-thumb {
     height: 174px;
     animation: pulse-animation 2s infinite;
     cursor: pointer;
+    color: #FFFFFF;
   }
 }
 @media screen and (max-width: 375px) {
@@ -755,6 +757,7 @@ body::-webkit-scrollbar-thumb {
     height: 154px;
     animation: pulse-animation 2s infinite;
     cursor: pointer;
+    color: #FFFFFF;
   }
 }
 body {
@@ -1097,13 +1100,46 @@ body section {
   }
 }
 @media screen and (min-width: 769px) {
-  .section_home {
+  .section_home1 {
     height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 17;
+  }
+
+  /*scss pour injection de section lors du srool du menu debut */
+  .destination_section {
+    transform: translate(100%);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .crew_section {
+    transform: translate(200%);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .techno_section {
+    transform: translate(300%);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  /*fin */
+  .section_home {
+    height: auto;
+    width: 100vw;
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: index 12;
   }
   .section_home div {
     width: 450px;
@@ -1146,7 +1182,7 @@ body section {
 }
 @media screen and (min-width: 769px) {
   .left p {
-    width: 382px;
+    width: 582px;
     height: 34px;
     margin-left: 140.5px;
     margin-top: 1px;
@@ -1188,6 +1224,7 @@ body section {
     height: 158px;
     width: 405px;
     text-align: justify;
+    margin-bottom: 5px;
   }
   .right hr {
     height: 2px;
@@ -1364,7 +1401,7 @@ body section {
 }
 @media screen and (min-width: 769px) {
   .crew_section .left_crew .titre_crew {
-    width: 286px;
+    width: 486px;
     height: 34px;
     margin-left: 100.5px;
     margin-top: 20px;
@@ -1615,10 +1652,10 @@ body section {
 @media screen and (min-width: 769px) {
   .techno_section .left_techno h3 {
     position: absolute;
-    width: 305px;
+    width: 405px;
     height: 34px;
     left: 100.5px;
-    top: 150px;
+    top: 30px;
   }
   .techno_section .left_techno h3 span:nth-child(1) {
     margin-right: 10px;
@@ -1650,14 +1687,14 @@ body section {
     height: 19px;
     left: 15%;
     right: 68.09%;
-    top: calc(70% - 9.5px - 142px);
+    top: calc(70% + 397.5px - 142px);
   }
   .techno_section .left_techno h1 {
     position: absolute;
     height: 64px;
     left: 15%;
     right: 0%;
-    top: calc(70% - 32px - 89.5px);
+    top: calc(70% + 401px - 89.5px);
   }
   .techno_section .left_techno p {
     position: absolute;
@@ -1665,7 +1702,7 @@ body section {
     width: 500px;
     left: 15%;
     right: 5.53%;
-    top: calc(70% - 96px + 55.5px);
+    top: calc(17% + 359px + 55.5px);
   }
   .techno_section .right_techno img {
     position: absolute;

@@ -1,3 +1,7 @@
+export default async function technologie() {
+    
+
+
 const button1 = document.getElementById("button1_techno");
 const button2 = document.getElementById("button2_techno");
 const button3 = document.getElementById("button3_techno");
@@ -118,5 +122,5 @@ h1.innerHTML = data_vue[2].name;
 
 
 
-
+}
 

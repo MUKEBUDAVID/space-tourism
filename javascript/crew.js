@@ -1,3 +1,6 @@
+export default async function crew(params) {
+    
+
 const radio1 = document.getElementById("radio1");
 const radio2 = document.getElementById("radio2");
 const radio3 = document.getElementById("radio3");
@@ -60,3 +63,7 @@ radio3.addEventListener("change",async () => {
 radio4.addEventListener("change",async () => {
     change_crew(3);
 })
+    
+    
+    
+}

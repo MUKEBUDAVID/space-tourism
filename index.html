@@ -7,7 +7,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="public/css/style.css">
-  <script src="javascript/header.js" async></script>
+  <script src="dist/app.bundle.js" async></script>
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
@@ -42,8 +42,10 @@
   </header>
 
 
-  
-  <section class="section_home" >
+  <section class="section_home1">
+
+
+  <section class="section_home" id="home_sroll">
     <div >
       <h3 class="so_typo">So, you want to travel to</h3>
       <h1 class="space_typo">SPACE</h1>
@@ -56,6 +58,142 @@
 
     <button type="submit" class="Home_btn Commander_typo">EXPLORE</button>
 
+
+  </section>
+
+
+
+
+  
+
+<section class="destination_section" id="destination_sroll">
+
+  <div class="left">
+
+    <p class="titre"><span class="number " id="number">01</span> <span class="pick_typo" id="pick_typo">Pick your
+        destination</span> </p>
+
+
+    <img src="assets/destination/image-moon.png" alt="picture of the moon" id="moon">
+
+
+  </div>
+
+
+
+  <div class="right">
+
+
+    <ul>
+      <li id="satelite1">Moon</li>
+      <li id="satelite2">Mars</li>
+      <li id="satelite3">Europa</li>
+      <li id="satelite4">Titan</li>
+    </ul>
+
+    <h1 id="h1">Moon</h1>
+
+
+
+
+    <p class="right_firstP" id="firstP">
+
+      See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+      regain perspective and come back refreshed. While you’re there, take in some history
+      by visiting the Luna 2 and Apollo 11 landing sites.
+    </p>
+
+
+    <hr>
+
+    <div class="right_mini-footeur">
+
+      <div>
+        <p class="AVG_typo">Avg. distance</p>
+        <p class="distance_typo" id="distance1">384,400 km</p>
+      </div>
+      <div>
+        <p class="AVG_typo">Est. travel time</p>
+        <p class="distance_typo" id="distance2">3 days</p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+</section>
+
+
+
+<section class="crew_section" id="crew_sroll">
+
+  <div class="left_crew">
+
+    <p class="titre_crew   titre_crew_typo"><span>02</span><span>Meet your crew</span></p>
+
+
+    <h2 class="h2_crew  h2_crew_typo" id="h2_crew">Commander</h2>
+
+    <h1 class="h1_crew h1_crew_typo" id="h1_crew">Douglas Hurley</h1>
+
+    <p class="paragraphe_crew paragraphe_crew_typo" id="paragraphe_crew">Douglas Gerald Hurley is an American engineer,
+      former Marine Corps pilot
+      and former NASA astronaut. He launched into space for the third time as
+      commander of Crew Dragon Demo-2.</p>
+
+
+    <div class="radio_btn">
+      <input type="radio" checked name="radio" id="radio1">
+      <input type="radio" name="radio" id="radio2">
+      <input type="radio" name="radio" id="radio3">
+      <input type="radio" name="radio" id="radio4">
+    </div>
+  </div>
+
+
+
+  <div class="right_crew">
+    <img src="assets/crew/image-removebg-preview(289).png" alt="image of douglas hurley" id="img_crew">
+  </div>
+
+
+</section>
+
+
+
+<section class="techno_section" id="techno_sroll">
+
+  <div class="left_techno">
+    <h3><span>03</span> <span> Space launch 101</span></h3>
+
+    <div class="btn_techno">
+      <button type="button" name="button1" id="button1_techno">1</button>
+      <button type="button" name="button2" id="button2_techno">2</button>
+      <button type="button" name="button3" id="button3_techno">3</button>
+
+    </div>
+
+    <h4 id="h4_techno">The terminology...</h4>
+    <h1 id="h1_techno"> LAUNCH VEHICLE</h1>
+
+    <p id="p_techno">
+      A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to
+      space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing
+      150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+    </p>
+  </div>
+
+
+  <div class="right_techno">
+    <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="picture of laucnh vehicule">
+  </div>
+
+</section>
 
   </section>
 
