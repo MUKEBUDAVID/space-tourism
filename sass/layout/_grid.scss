@@ -14,7 +14,24 @@ body {
 }
 
 
+@media screen and (min-width: map-get($breakpoint, desktop)) {
 
+.section_home{
+    display: grid;
+    grid-template-rows:1fr;
+    grid-template-columns:repeat(2,1fr) ;
+}
+.section-home div:nth-child(1) {
+    grid-column:1;
+}
+
+.section-home div:nth-child(2) {
+
+    grid-column:2;
+
+}
+
+}
 
 
 

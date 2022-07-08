@@ -39,21 +39,22 @@ const addBgAndActive2 = (list, un, deux, trois) => {
     list.addEventListener("click", () => {
         // for ajoute la class active et l enleve dans le cas d'un phone
 
-        if (list.classList.contains("active2") == false && screen.width > 375) {
+        if (list.classList.contains("active2") == false && screen.width >= 375) {
             un.classList.remove("active2");
             deux.classList.remove("active2");
             trois.classList.remove("active2");
 
             list.classList.add("active2");
 
-        } else if (screen.width <= 375) {
-            un.classList.remove("active2");
-            deux.classList.remove("active2");
-            trois.classList.remove("active2");
+        } 
+        // else if (screen.width <= 375) {
+        //     un.classList.remove("active2");
+        //     deux.classList.remove("active2");
+        //     trois.classList.remove("active2");
 
-            list.classList.remove("active2");
+        //     list.classList.remove("active2");
 
-        }
+        // }
 
 
 

@@ -27,40 +27,46 @@
 
         &_barreGenerale {
             height: 96px;
-            width: 1200px;
-            margin-top: 30px;
-            margin-left: 20px;
+            max-width: 1200px;
+            min-width: 300px;
+            width:100% ;
+            margin-top:-2%;
+            margin-left: 13%;
             position: relative;
-            // border: 6px yellow solid;
-
+            
             img {
                 height: 48px;
                 width: 48px;
-                margin-top: 21px;
-                margin-left: -90px;
+               margin-left: -10%;
+               transform:translateY(119%)
             }
 
 
             .bar {
-                position: absolute;
-                width: 467px;
+                position:relative;
+                max-width: 467px;
+                min-width: 67px;
+                width: 46%;
                 height: 1px;
-                left: 2px;
-                top: 41px;
+                // left: 2px;
+                // top: 41px;
                 background: #FFFFFF;
                 mix-blend-mode: normal;
                 opacity: 0.25;
-                z-index: 20;
+                z-index: 220;
+                transform: translateX(-2%) translateY(50px);
             }
         }
 
         //  header_menu
         &_menu {
             height: 96px;
-            width: 746px;
+           max-width:746px;
+           min-width:146px;
+            width: 63%;
             border: 4px transparent solid;
-            margin-left: 453px;
-            margin-top: -77px;
+            margin-left: 37%;
+            margin-top: -20px;
             position: relative;
             background: rgba(255, 255, 255, 0.04);
             backdrop-filter: blur(81.5485px);
@@ -85,11 +91,10 @@
 
 
             ul li:hover {
-                transition: all 0.3ms ease-in-out;
+               
                 border-bottom: 4px #8d8989 solid;
                 padding-bottom: 34px;
-                // mix-blend-mode: normal;
-                // opacity: 0.5;
+               
             }
 
 
@@ -223,13 +228,9 @@
         // the class for js
 
 
-        // .active {
-        //     display: none;
-        // }
 
-        .active_Tablet {
-            // transition: all 0.3ms ease-in-out;
-            border-bottom: 4px $color_tereciare solid;
+        .active {
+           border-bottom: 4px $color_tereciare solid;
             padding-bottom: 34px;
 
         }
@@ -283,18 +284,36 @@
             display: none;
         }
 
-        &_barreGenerale,
+    
         &_menu {
-            height: 667px;
-            width: 254px;
-            left: 121px;
+            height: 687px;
+            width: 314px;
+            left: 61px;
             top: 0px;
             border-radius: 0px;
+            position: absolute;
+             background:transparent;
+             backdrop-filter: blur(0px);
+ }
 
-        }
 
         &_barreGenerale {
             display: none;
+            z-index: 2000;
+            background: rgba(7, 7, 7, 0.63);
+            backdrop-filter: blur(81.5485px);
+            //   height: 687px;
+              height: 100%;
+            
+              max-width: 314px;
+              width:86%;
+              left: 16%;
+              
+              border-radius: 0px;
+              position: absolute;
+
+
+
         }
 
         &_menu ul {
@@ -308,6 +327,11 @@
                 display: flex;
                 flex-direction: row;
                 padding-bottom: 20px;
+                transform: scale(100%);
+                transition:transform ease 900ms;
+
+
+
             }
 
             li span {
@@ -323,8 +347,9 @@
 
                 border-bottom: 0px transparent solid;
                 padding-bottom: 20px;
-                // mix-blend-mode: normal;
-                // opacity: 0.5;
+                mix-blend-mode: normal;
+               transform: scale(120%);
+
             }
 
         }
@@ -333,21 +358,34 @@
             display: block;
             width: 31px;
             height: 32px;
-            margin-left: 200px;
-            color: #FFFFFF;
+            margin-left: 65%;
+            position: fixed;
+
         }
 
 
         // the class for js
 
-        .block{
-            display:block ;
-           
+        .block {
+            display: block;
+
         }
 
-        .none{
-            display:none ;
+        .none {
+            display: none;
         }
+
+
+         .active {
+             border-bottom: 0px transparent solid;
+             padding-bottom: 20px;
+             mix-blend-mode: normal;
+             opacity: 0.5;
+             transform: scale(120%);
+             }
+
+
+     
 
 
 

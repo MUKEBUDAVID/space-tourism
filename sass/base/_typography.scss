@@ -23,17 +23,21 @@
 .so_typo {
 
 
-    font-size: convertion_rem(28);
+    font-size: max(2vw, convertion_rem(4));
+    // font-size: max(convertion_rem(28), convertion_rem(4));
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 4.724999904632568px;
-    text-align: left;
+    text-align: center;
 
     @media screen and (max-width: map-get($breakpoint, tablet)) {
-        font-size: convertion_rem(20);
-        line-height: 24px;
+        
+    // font-size: convertion_rem(20);
+    font-size: max(3vw, convertion_rem(4));
+
+       line-height: 24px;
         letter-spacing: 3.375px;
-        text-align: center;
+        text-align:center;
 
 
     }
@@ -44,6 +48,7 @@
         line-height: 19px;
         letter-spacing: 2.700000047683716px;
         text-align: center;
+        transform: translateY(-256%);
 
 
     }
@@ -53,7 +58,8 @@
 
 
 .space_typo {
-    font-size: convertion_rem(150);
+    font-size: max(10vw, convertion_rem(4));
+    // font-size: convertion_rem(150);
     font-weight: 400;
     line-height: 172px;
     letter-spacing: 0px;
@@ -61,17 +67,22 @@
 
 
     @media screen and (max-width: map-get($breakpoint, tablet)) {
-        font-size: convertion_rem(150);
+        // font-size: convertion_rem(150);
+    font-size: max(15vw, convertion_rem(4));
+
         font-family: Bellefair;
         line-height: 150px;
-        text-align: left;
+        text-align: center;
+        overflow: visible;
 
 
     }
 
 
     @media screen and (max-width: map-get($breakpoint, mobile)) {
-        font-size: convertion_rem(80);
+        
+    font-size: max(convertion_rem(80), convertion_rem(4));
+
         line-height: 100px;
         text-align: center;
 
@@ -86,14 +97,23 @@
 
 
 .Body_Text_typo {
-    font-size: convertion_rem(18);
+    // font-size: convertion_rem(18);
+    font-size: max(1.5vw, convertion_rem(4));
+
     line-height: 32px;
     font-weight: 400;
 
     @media screen and (max-width: map-get($breakpoint, tablet)) {
-        font-size: convertion_rem(16);
+        // font-size: convertion_rem(16);
+    font-size: max(2vw, convertion_rem(0.5));
+
         text-align: center;
         line-height: 28px;
+        overflow: visible;
+        word-wrap: break-word;
+
+        
+        
     }
 
 
@@ -102,6 +122,9 @@
         line-height: 25px;
         letter-spacing: 0px;
         text-align: center;
+        transform: translateY(22%);
+          
+
 
 
 
@@ -118,7 +141,7 @@
 
 
 .Commander_typo {
-    font-size: convertion_rem(32);
+    font-size:max(3vw, convertion_rem(4));
     font-weight: 400;
     line-height: 37px;
     letter-spacing: 2px;
@@ -127,10 +150,11 @@
 
 
     @media screen and (max-width: map-get($breakpoint, mobile)) {
-        font-size: convertion_rem(20);
-        line-height: 23px;
-        letter-spacing: 1.25px;
-        text-align: center;
+    
+    font-size:max(3vw, convertion_rem(4));
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    text-align: center;
 
 
 
@@ -143,7 +167,9 @@
 // for the header the page home 
 .ulHome_typo {
     color: $color_tereciare;
-    font-size: convertion_rem(16);
+    // font-size: max(convertion_rem(16), convertion_rem(4));
+    font-size: max(1.5vw, convertion_rem(4));
+
     text-decoration: none;
     font-weight: 400;
     letter-spacing: 2.7px;
@@ -165,7 +191,9 @@
 // span mobile
 .span_typo {
     font-family: Barlow Condensed;
-    font-size: convertion_rem(16);
+    font-size: max(1.5vw, convertion_rem(4));
+    // font-size: max(convertion_rem(16), convertion_rem(4));
+
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 2.700000047683716px;
@@ -195,7 +223,9 @@
     .number {
         font-style: normal;
         font-weight: 700;
-        font-size: convertion_rem(28);
+        // font-size: convertion_rem(28);
+    font-size: max(2vw, convertion_rem(4));
+
         line-height: 34px;
         /* identical to box height */
 
@@ -212,7 +242,9 @@
             font-family: 'Barlow Condensed';
             font-style: normal;
             font-weight: 700;
-            font-size: convertion_rem(20);
+            // font-size: convertion_rem(20);
+    font-size: max(2.8vw, convertion_rem(4));
+
             line-height: 24px;
             /* identical to box height */
 
@@ -233,7 +265,7 @@
             font-family: 'Barlow Condensed';
             font-style: normal;
             font-weight: 700;
-            font-size: convertion_rem(16);
+            font-size: max(3.8vw, convertion_rem(4));
             line-height: 19px;
             letter-spacing: 2.7px;
             mix-blend-mode: normal;
@@ -246,7 +278,9 @@
 
     .pick_typo {
         color: $color_tereciare;
-        font-size: convertion_rem(28);
+        // font-size: convertion_rem(28);
+    font-size: max(2vw, convertion_rem(4));
+
         font-style: normal;
         font-weight: 400;
         line-height: 34px;
@@ -260,7 +294,9 @@
             font-family: 'Barlow Condensed';
             font-style: normal;
             font-weight: 400;
-            font-size: convertion_rem(20);
+            // font-size: convertion_rem(20);
+           font-size: max(3vw, convertion_rem(4));
+
             line-height: 24px;
             /* identical to box height */
 
@@ -276,7 +312,7 @@
             font-family: 'Barlow Condensed';
             font-style: normal;
             font-weight: 400;
-            font-size: convertion_rem(16);
+            font-size: max(3.8vw, convertion_rem(4));
             line-height: 19px;
             letter-spacing: 2.7px;
             text-transform: uppercase;
@@ -303,11 +339,23 @@
         font-family: 'Barlow Condensed';
         font-style: normal;
         font-weight: 400;
-        font-size: convertion_rem(16);
+        // font-size: convertion_rem(16);
+       font-size: max(1.3vw, convertion_rem(4));
+
         line-height: 19px;
         letter-spacing: 2.7px;
         color: $color_secodaire;
         text-transform: uppercase;
+        @media screen and (max-width: map-get($breakpoint, tablet)) {
+            font-size: max(2.7vw, convertion_rem(4));
+           }
+
+
+          @media screen and (max-width: map-get($breakpoint, mobile)) {
+              font-size: max(2.7vw, convertion_rem(4));
+              
+
+          }
 
     }
 
@@ -316,7 +364,9 @@
         font-family: 'Bellefair';
         font-style: normal;
         font-weight: 400;
-        font-size: convertion_rem(100);
+        // font-size: convertion_rem(100);
+        font-size: max(7vw, convertion_rem(4));
+
         line-height: 115px;
         text-transform: uppercase;
         color: $color_tereciare;
@@ -325,7 +375,9 @@
             font-family: 'Bellefair';
             font-style: normal;
             font-weight: 400;
-            font-size: convertion_rem(80);
+            // font-size: convertion_rem(80);
+            font-size: max(12vw, convertion_rem(4));
+
             line-height: 92px;
             /* identical to box height */
 
@@ -339,7 +391,7 @@
             font-family: 'Bellefair';
             font-style: normal;
             font-weight: 400;
-            font-size: convertion_rem(56);
+            font-size: max(12vw, convertion_rem(4));
             line-height: 64px;
             text-align: center;
 
@@ -353,7 +405,10 @@
         font-family: 'Barlow';
         font-style: normal;
         font-weight: 400;
-        font-size: convertion_rem(18);
+        // font-size: convertion_rem(18);
+        font-size: max(1.2vw, convertion_rem(4));
+        word-wrap: break-word;
+
         line-height: 32px;
         /* or 178% */
         color: $color_secodaire;
@@ -365,40 +420,70 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
+            font-size: max(2vw, convertion_rem(10));
+
             /* or 175% */
 
             text-align: center;
 
             color: $color_tereciare;
+}
 
 
 
 
+       @media screen and (max-width: map-get($breakpoint, mobile)) {
+          
+           font-size: max(3vw, convertion_rem(10));
 
-        }
+       }
     }
 
     .AVG_typo {
         font-family: 'Barlow Condensed';
         font-style: normal;
         font-weight: 400;
-        font-size: convertion_rem(14);
+        // font-size: convertion_rem(14);
+        font-size: max(1.2vw, convertion_rem(4));
+
         line-height: 17px;
         /* identical to box height */
         letter-spacing: 2.3625px;
         text-transform: uppercase;
         color: $color_secodaire;
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+    font-size: max(2vw, convertion_rem(10));
+
+}
+
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+
+    font-size: max(3vw, convertion_rem(10));
+
+}
     }
 
     .distance_typo {
         font-family: 'Bellefair';
         font-style: normal;
         font-weight: 400;
-        font-size: 28px;
+        // font-size: 28px;
+        font-size: max(2.2vw, convertion_rem(4));
+
         line-height: 32px;
         /* identical to box height */
         text-transform: uppercase;
         color: $color_tereciare;
+        @media screen and (max-width: map-get($breakpoint, tablet)) {
+            font-size: max(2.4vw, convertion_rem(10));
+
+        }
+
+        @media screen and (max-width: map-get($breakpoint, mobile)) {
+
+        font-size: max(5vw, convertion_rem(10));
+
+}
     }
 
 
@@ -421,7 +506,8 @@
                 font-family: 'Barlow Condensed';
                 font-style: normal;
                 font-weight: 700;
-                font-size: convertion_rem(28);
+                font-size: max(2vw, convertion_rem(4));
+
                 line-height: 34px;
                 /* identical to box height */
 
@@ -440,7 +526,7 @@
                 font-family: 'Barlow Condensed';
                 font-style: normal;
                 font-weight: 400;
-                font-size: convertion_rem(28);
+                font-size: max(2vw, convertion_rem(4));
                 line-height: 34px;
                 /* identical to box height */
 
@@ -456,7 +542,7 @@
                 font-family: 'Bellefair';
                 font-style: normal;
                 font-weight: 400;
-                font-size: convertion_rem(32);
+                font-size: max(2.5vw, convertion_rem(4));
                 line-height: 37px;
                 /* identical to box height */
 
@@ -477,7 +563,7 @@
             font-family: 'Bellefair';
             font-style: normal;
             font-weight: 400;
-            font-size: convertion_rem(56);
+            font-size: max(4vw, convertion_rem(4));
             line-height: 64px;
             text-transform: uppercase;
 
@@ -490,8 +576,9 @@
             font-family: 'Barlow';
             font-style: normal;
             font-weight: 400;
-            font-size: vertion_rem(18);
-            line-height: 16px;
+            font-size: max(1.2vw, convertion_rem(4));
+
+            line-height: 26px;
             word-wrap: break-word;
             /* or 178% */
 
@@ -759,7 +846,7 @@
                 font-family: 'Barlow Condensed';
                 font-style: normal;
                 font-weight: 700;
-                font-size: convertion_rem(28);
+                font-size: max(2vw, convertion_rem(4));
                 line-height: 34px;
                 /* identical to box height */
 
@@ -778,7 +865,8 @@
                 font-family: 'Barlow Condensed';
                 font-style: normal;
                 font-weight: 400;
-                font-size: convertion_rem(25);
+                font-size: max(2vw, convertion_rem(4));
+
                 line-height: 34px;
                 /* identical to box height */
 
@@ -794,7 +882,9 @@
                 font-family: 'Barlow Condensed';
                 font-style: normal;
                 font-weight: 400;
-                font-size: convertion_rem(16);
+                font-size: max(1vw, convertion_rem(4));
+
+                
                 line-height: 19px;
                 letter-spacing: 2.7px;
 
@@ -805,7 +895,8 @@
                 font-family: 'Bellefair';
                 font-style: normal;
                 font-weight: 400;
-                font-size: convertion_rem(56);
+                font-size: max(4vw, convertion_rem(4));
+
                 line-height: 64px;
 
                 color: $color_tereciare;
@@ -815,7 +906,8 @@
                 font-family: 'Barlow';
                 font-style: normal;
                 font-weight: 400;
-                font-size: convertion_rem(18);
+                font-size: max(1.3vw, convertion_rem(4));
+
                 line-height: 32px;
                 /* or 178% */
                 color: $color_secodaire;
@@ -931,7 +1023,7 @@
 
 
 @media screen and (max-width: map-get($breakpoint, mobile)) {
-    .crew_section {
+    .techno_section {
         color: white;
 .left_techno {
 
@@ -939,7 +1031,8 @@
         font-family: 'Barlow Condensed';
         font-style: normal;
         font-weight: 700;
-        font-size: convertion_rem(16);
+        font-size: max(4vw, convertion_rem(4));
+
         line-height: 19px;
         /* identical to box height */
 
@@ -957,7 +1050,8 @@
         font-family: 'Barlow Condensed';
         font-style: normal;
         font-weight: 400;
-        font-size: convertion_rem(16);
+        font-size: max(4vw, convertion_rem(4));
+
         line-height: 19px;
         /* identical to box height */
 
@@ -974,7 +1068,8 @@
         font-family: 'Barlow Condensed';
         font-style: normal;
         font-weight: 400;
-        font-size: convertion_rem(14);
+        font-size: max(3vw, convertion_rem(4));
+
         line-height: 17px;
         letter-spacing: 2.3625px;
 
@@ -985,7 +1080,8 @@
         font-family: 'Bellefair';
         font-style: normal;
         font-weight: 400;
-        font-size: convertion_rem(24);
+        font-size: max(10vw, convertion_rem(4));
+
         line-height: 28px;
         /* identical to box height */
 
@@ -1000,7 +1096,9 @@
         font-style: normal;
         font-weight: 400;
         font-size: convertion_rem(1);
-        line-height: 5px;
+        font-size: max(4vw, convertion_rem(4));
+
+        line-height: 20px;
         /* or 178% */
         color: $color_secodaire;
         text-align: center;

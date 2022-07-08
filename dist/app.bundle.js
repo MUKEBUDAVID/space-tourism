@@ -72,7 +72,7 @@ function _crew() {
 
                       case 2:
                         dataCrew = _context6.sent;
-                        img_crew.setAttribute("src", dataCrew[index].images.png); // console.log(david);
+                        img_crew.setAttribute("src", dataCrew[index].images.png); // console.log("david");
 
                         h2_crew.textContent = dataCrew[index].role;
                         h1_crew.textContent = dataCrew[index].name;
@@ -295,17 +295,18 @@ function _destination() {
             addBgAndActive2 = function addBgAndActive2(list, un, deux, trois) {
               list.addEventListener("click", function () {
                 // for ajoute la class active et l enleve dans le cas d'un phone
-                if (list.classList.contains("active2") == false && screen.width > 375) {
+                if (list.classList.contains("active2") == false && screen.width >= 375) {
                   un.classList.remove("active2");
                   deux.classList.remove("active2");
                   trois.classList.remove("active2");
                   list.classList.add("active2");
-                } else if (screen.width <= 375) {
-                  un.classList.remove("active2");
-                  deux.classList.remove("active2");
-                  trois.classList.remove("active2");
-                  list.classList.remove("active2");
-                }
+                } // else if (screen.width <= 375) {
+                //     un.classList.remove("active2");
+                //     deux.classList.remove("active2");
+                //     trois.classList.remove("active2");
+                //     list.classList.remove("active2");
+                // }
+
               });
             }; // the even for 1er satelite
 
@@ -510,19 +511,14 @@ function _header() {
                   body.style.backgroundImage = urlbg_Mobile;
                   body.style.backgroundSize = "cover";
                   body.style.backgroundRepeat = "no-repeat";
-                } // for ajoute la class active et l enleve dans le cas d'un p 
+                } // for ajoute la class active  
 
 
-                if (active == false && screen.width > 375) {
+                if (active == false && screen.width >= 375 || screen.width < 375) {
                   un.classList.remove("active");
                   deux.classList.remove("active");
                   trois.classList.remove("active");
                   addelement.classList.add("active");
-                } else if (screen.width <= 375) {
-                  un.classList.remove("active");
-                  deux.classList.remove("active");
-                  trois.classList.remove("active");
-                  addelement.classList.remove("active");
                 }
               });
             }; // for pc
@@ -566,7 +562,6 @@ function _header() {
               hamburger.classList.remove("block");
               barreGenerale.classList.add("block");
               hamburger.classList.add("none");
-              barreGenerale.style.marginTop = "-16px";
             }); // the js pour l'apparition menu hamburger
 
             close_icone.addEventListener("click", function () {

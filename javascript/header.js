@@ -62,23 +62,16 @@ const addBgAndActive = (list, urlbg_pc, urlbg_Tablet, urlbg_Mobile, active, un, 
             body.style.backgroundRepeat = "no-repeat";
         }
 
-        // for ajoute la class active et l enleve dans le cas d'un p 
-        if (active == false && screen.width > 375) {
+        // for ajoute la class active  
+        if ((active == false && screen.width >= 375) || screen.width < 375) {
             un.classList.remove("active");
             deux.classList.remove("active");
             trois.classList.remove("active");
 
             addelement.classList.add("active");
 
-        } else if (screen.width <= 375) {
-            un.classList.remove("active");
-            deux.classList.remove("active");
-            trois.classList.remove("active");
-
-            addelement.classList.remove("active");
-
         }
-
+        
 
 
     });
@@ -166,8 +159,8 @@ hamburger.addEventListener("click", () => {
     barreGenerale.classList.add("block");
     hamburger.classList.add("none");
 
-    barreGenerale.style.marginTop = "-16px";
-
+    
+   
 
 
 

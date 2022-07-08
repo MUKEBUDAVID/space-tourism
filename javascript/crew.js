@@ -32,7 +32,7 @@ async function change_crew(index) {
     img_crew.setAttribute("src", dataCrew[index].images.png);
     
 
-    // console.log(david);
+    // console.log("david");
 
     h2_crew.textContent= dataCrew[index].role;
 

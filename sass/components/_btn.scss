@@ -1,28 +1,30 @@
 // the breakpoint for the desktop
+@media screen and (min-width: map-get($breakpoint, desktop)) {
 .Home_btn {
-    // position: absolute;
-    width: 274px;
-    height: 274px;
-    margin-left: 10px;
-    margin-top: 310px;
-    margin-right: 84px;
-    border-radius: 101%;
-    // border:50px black solid;
-    // box-sizing: content-box;
-
+  min-width: 258px;
+  width: 60%;
+  height: 71%;
+  min-height: 258px;
+  margin-left: 35%;
+  margin-top: 18%;
+ border-radius: 200%;
 
     &:hover {
         border: 50px rgb(36, 38, 47) solid;
-        box-sizing: content-box;
-        width: 174px;
-        height: 174px;
+        box-sizing: border-box;
+        width: 150px !important;
+        height: 150px !important;
+        font-size:2rem ;
         animation: pulse-animation 2s infinite;
         cursor: pointer;
-        color:$color_tereciare ;
-        
+        color: $color_primaire;
+
+
 
 
     }
+}
+
 }
 
 
@@ -51,7 +53,7 @@
         width: 242px;
         height: 242px;
         margin-top: 11px;
-        margin-left: 182px;
+        margin-left: 16%;
         border-radius: 101%;
         // border:50px black solid;
         // box-sizing: content-box;
@@ -64,7 +66,7 @@
             height: 174px;
             animation: pulse-animation 2s infinite;
             cursor: pointer;
-            color: $color_tereciare;
+            color: $color_primaire;
 
 
         }
@@ -82,7 +84,6 @@
         width: 150px;
         height: 150px;
         margin-top: 62px;
-        margin-left: 117px;
         border-radius: 101%;
 
 
@@ -94,7 +95,7 @@
             height: 154px;
             animation: pulse-animation 2s infinite;
             cursor: pointer;
-            color: $color_tereciare;
+            color: $color_primaire;
 
 
 
